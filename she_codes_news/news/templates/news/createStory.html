@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="" method="post">
+{% comment %} security for not copied by other people {% endcomment %}
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="submit">
+</form>
+{% endblock %}
