@@ -43,8 +43,19 @@ ALLOWED_HOSTS = ['*']
 CORS_ALLOW_ALL_ORIGINS = True 
 
 # Application definition
+# INSTALLED_APPS = [
+#     'projects.apps.ProjectsConfig', 'corsheaders',
+#     'news.apps.NewsConfig',
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+#     'users.apps.UsersConfig',
+# ]
 INSTALLED_APPS = [
-    'projects.apps.ProjectsConfig', 'corsheaders',
+    'corsheaders',
     'news.apps.NewsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -54,6 +65,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
 ]
+
 AUTH_USER_MODEL = 'users.CustomUser'
 
 MIDDLEWARE = [
